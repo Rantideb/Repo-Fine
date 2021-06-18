@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=ß, initial-scale=1.0">
+    <title>Ranti Portfolio</title>
+
+    <style>
+        /* h1{
+            color: brown;
+            
+        }
+        .special:hover{
+            color: indianred;
+            font-size: 60px;
+            background-color: khaki;
+        }
+        input:focus{
+            font-weight: 700;
+            font-size: 20px;
+            color: green;
+        }
+        li:first-child{
+            background-color: greenyellow;
+        }
+        li:last-child{
+            font-size: 50px;
+        }
+        li:nth-child(2n){
+            background-color: red;
+        }
+        li:nth-child(2n+1){
+            background-color: salmon;
+        }
+        a:visited{
+            color: blue;
+        } */
+
+        h1::before{
+            content: "Hello ";
+            color: burlywood;
+        }
+
+        .special::after{
+            content: " Hoga mara sara";
+            font-weight: 700;
+        }
+
+        body{
+            counter-reset: section;
+        }
+
+        li::before{
+            counter-increment: section;
+            content: "crush" counter(section) ": ";
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <h1>Pseudo Class</h1>
+    <h1 class="special">Normal Class</h1> 
+    <input name="email" type="text">
+    <input name="password" type="text">
+    <br>
+    <a href="https://www.google.com/">Google</a>
+    <a href="http://bhu.ucanapply.com/universitysystem/student/c7s3i7et1sv4t2ivumbkbnvkm7/student-marks/">BHU</a>
+    <ul>
+        <li>alia</li>
+        <li>Dalia</li>
+        <li>Malia</li>
+        <li>Salia</li>
+        <li>Jalia</li>
+        <li>kalia</li>
+        <li>kaliya</li>
+    </ul>
+
+    
+
+</body>
+</html>
